@@ -1,0 +1,16 @@
+description: test
+
+target:
+  vc: tscience-vc
+  cluster: rr1
+
+environment:
+  image: pytorch/pytorch:latest
+  registry: index.docker.io
+
+jobs:
+- name: trans_ende
+  sku: G1
+  command:
+  - cd /jungo
+  - ls
